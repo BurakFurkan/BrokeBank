@@ -1,0 +1,14 @@
+{
+  "name": "broke-bank",
+  "version": "1.0.0",
+  "description": "Bank clone ",
+  "main": "main.js",
+  "type": "module",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+  "author": "Burak Furkan Tenekeci",
+  "license": "MIT"
+}

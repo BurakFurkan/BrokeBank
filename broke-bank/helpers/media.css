@@ -1,0 +1,32 @@
+/* On screens that are 992px or less*/
+@media screen and (max-width: 992px) {
+    body {
+      
+    }
+
+    #stt{
+      grid-template-columns: 1fr;
+      
+      
+    }
+  
+
+}
+  
+  /* On screens that are 600px or less */
+  @media screen and (max-width: 600px) {
+    body {
+      
+    }
+
+    #stt{
+      grid-template-columns: 1fr;
+      
+      grid-template-areas: 
+      "main__user__name" 
+      "main__statement"
+      "creditCard__wrapper" 
+      "chart__wrapper";
+      
+    }
+  }

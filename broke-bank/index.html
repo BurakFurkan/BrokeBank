@@ -1,0 +1,468 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broke Bank</title>
+    <link rel="icon" type="image/x-icon" href="./public/bank-favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        <!-------------------------    Visitor Header   --------------------->
+        <div id="visitor__header" class="header header__active">
+            <div class="header__left d-flex">
+                <a href="./index.html" id="logo__link" class="d-flex">
+                    <img src="./public/broke-logo.png" alt="" id="main__logo">
+                    <p>Broke Bank</p>
+                </a>
+            </div>
+            <div class="header__right d-flex">
+                <div class="login__wrapper">
+                    <button class="login__dropdown__button">Login</button>
+                <div class="login__dropdown__content">
+                    <input type="text" id="loginIDInput" class="dropdown__id-input" placeholder="Customer ID"  autocomplete="off" required>
+                    <input type="password" id="loginPasswordInput" class="dropdown__password-input" placeholder="Password" required>
+                    <input type="button" id="loginBtn" class="btn btn-primary" value="Login">
+                </div>
+                </div>
+                <a href="./signUp/signUp.html" class="signUp" ><p>Sign Up For Free</p><img src="./public/icons/arrow_forward.png" alt=""></a>
+            </div>
+        </div>
+
+
+
+        <!-------------------   Registered User Header   ------------->
+
+        <div id="registeredHeader" class="header ">
+            <div class="header__left d-flex">
+                <a href="./index.html" id="logo__link" class="d-flex">
+                    <img src="./public/broke-logo.png" alt="" id="main__logo">
+                    <p>Broke Bank</p>
+                </a>
+            </div>
+            <div class="registered__header__right ">
+                <div class="icons__wrapper">
+                    <div id="favourite" class="icons__dropdown__wrapper" data-number="0">
+                        <img src="./public/icons/heart.svg" alt="Favourites">
+                        <div class="favourite__dropdown">
+                            <a href="#">Favourite Exchange</a>
+                            <a href="#">Favourite Withdraw</a>
+                            <a href="#">Favourite Send</a>
+                        </div>
+                    </div>
+                    <div id="message" class="icons__dropdown__wrapper" data-number="0">
+                        <img src="./public/icons/mail.svg" alt="Mails">
+                        <div class="favourite__dropdown">
+                            <a href="#">Message 1</a>
+                            <a href="#">Message 2</a>
+                            <a href="#">Message 3</a>
+                        </div>
+                    </div>
+                    <div id="notif__wrapper" class="icons__dropdown__wrapper" data-number="1">
+                        <span id="notif__badge">0</span>
+                        <img src="./public/icons/notifications.svg" alt="Notifications">
+                        <div id="notif__shower" class="favourite__dropdown notif" data-number="1">
+                            
+                        </div>
+                    </div>
+                    <div id="userMain" class="icons__dropdown__wrapper">
+                        <img id="user__img" src="./public/icons/psyduck.png" alt="User Image">
+                        <div class="favourite__dropdown userimg">
+                            <button class="userimgBtn">Profile Settings</button>
+                            <button class="userimgBtn">Settings</button>
+                            <button class="userimgBtn" id="logout"><i class="fa-solid fa-arrow-right-from-bracket mr-2"></i>Logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- -----------------Main Wrapper  -------------->
+            
+        <div id="main__wrapper" class="main__wrapper ">
+
+            <!-- -----------------Side Nav Bar  -------------->
+            <div class="sidebar__wrapper">
+                <div tabindex="0" class="sidebar__content"><i class="fa-solid fa-chart-line mr-2"></i></i> Dashboard</div>
+                <div tabindex="1" class="sidebar__content"><i class="fa-regular fa-paper-plane mr-2"></i>Remittance</div>
+                <div tabindex="2" class="sidebar__content"><i class="fa-solid fa-money-bill-transfer mr-2"></i></i>Deposit / Withdraw</div>
+                <div tabindex="3" class="sidebar__content"><i class="fa-solid fa-rotate mr-2"></i>Exchange</div>
+                <div tabindex="4" class="sidebar__content"><i class="fa-solid fa-clock-rotate-left mr-2"></i>Transactions</div>
+            </div>
+    
+            <div class="process__wrapper">
+
+
+                <!--  ------------- Dashboard---------       -->
+                <div id="stt" class="processes process__active">
+                    <div id="main__user__name" class="main__user__name"><h1 id="welcomeUser">Welcome back User</h1></div>
+                    <div id="main__statement" class="main__statement">
+                            <!-- Slider main container -->
+                                <div class="swiper">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide "><h1 class="main__swipper__content"></h1></div>
+                                    <div class="swiper-slide "><h1 class="main__swipper__content"></h1></div>
+                                    <div class="swiper-slide "><h1 class="main__swipper__content"></h1></div>
+                                    <div class="swiper-slide "><h1 class="main__swipper__content"></h1></div>
+                                    </div>
+                                    <!-- If we need navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                
+                                    
+                                </div>
+                    </div>
+                    <div class="card__section">
+                        <div id="creditCard__wrapper" class="creditCard__wrapper">
+                            <p>RICH PEOPLE CLUB</p>
+                            <div id="credit__mid">
+                                <img id="chip" src="./public/icons/chip.png" alt="">
+                                <p> 5508 **** **** 1234</p>
+                            </div>
+                            
+                            <div class="card__footer">
+                                <span class="credit__username">USER NAME</span>
+                                <img src="./public/icons/visa.png" alt="">
+                            </div>
+                        </div>
+                        <div id="creditCard__wrapper" class="creditCard__wrapper">
+                            <p>RICH PEOPLE CLUB</p>
+                            <div id="credit__mid">
+                                <img id="chip" src="./public/icons/chip.png" alt="">
+                                <p> 5508 **** **** 1234</p>
+                            </div>
+                            
+                            <div class="card__footer">
+                                <span class="credit__username">USER NAME</span>
+                                <img src="./public/icons/visa.png" alt="">
+                            </div>
+                        </div>
+                        <div id="creditCard__wrapper" class="creditCard__wrapper">
+                            <p>RICH PEOPLE CLUB</p>
+                            <div id="credit__mid">
+                                <img id="chip" src="./public/icons/chip.png" alt="">
+                                <p> 5508 **** **** 1234</p>
+                            </div>
+                            
+                            <div class="card__footer">
+                                <span class="credit__username">USER NAME</span>
+                                <img src="./public/icons/visa.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="chart__wrapper" class="chart__wrapper">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+
+
+                    <!-- -------------- Remittance--------------  -->
+
+
+                <div id="rmt" class="processes">
+                    <div class="account">
+                        <label for="rmt__account__picker">Please Pick The Account</label>
+                        <select id="rmt__account__picker" class="form-control" name="account__picker" >
+                            <option value="pickaccount" selected>Pick The Account</option>
+                            <option value="tlAccount">TL &nbsp; Account</option>
+                            <option value="usdAccount">USD &nbsp; Account</option>
+                            <option value="eurAccount">EUR &nbsp; Account</option>
+                        </select>
+                        <div id="rmt__account__information" class="account__information">Pick Account</div>
+                    </div>
+                    <div class="informations">
+                        <div class="form-group">
+                            <label for="recipientName">Recipient Name</label>
+                            <input type="text" class="form-control" id="recipientName" placeholder="Recipient Name" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="IBAN">IBAN</label>
+                            <input type="text" class="form-control" value="TR" id="IBAN" placeholder="TR" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="remittance__amount">Amount</label>
+                            <input type="number" class="form-control"  min="0" max="999999" id="remittance__amount" placeholder= 0 dir="rtl" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="rmtDescription">Description</label>
+                            <input type="text" class="form-control"   id="rmtDescription" maxlength="40" placeholder="Description">
+                          </div>
+                          <button id="rmt__button" type="button" class="btn btn-primary">Send</button>
+                    </div>
+                    
+                </div>
+
+
+                    <!-- ----------------- Withdraw----------------  -->
+
+
+                <div id="wthd" class="processes">
+                    <div class="account">
+                        <label for="wthd__account__picker">Please Pick The Account</label>
+                        <select id="wthd__account__picker" class="form-control" name="account__picker">
+                            <option value="tlAccount">TL &nbsp; Account</option>
+                            <option value="usdAccount">USD &nbsp; Account</option>
+                            <option value="eurAccount">EUR &nbsp; Account</option>
+                        </select>
+                        <div id="wthd__account__information" class="account__information">12345<span>&nbsp;&nbsp;</span><span>TL</span></div>
+                    </div>
+                    <div class="main__processes">
+                        <div class="deposit">
+                            <div class="deposit__process">
+                                <div class="form-group">
+                                    <label for="depositAmount">Amount</label>
+                                    <input type="number" class="form-control" value="0" min="0" max="999999" id="depositAmount" placeholder= 0 dir="rtl" required>
+                                </div>
+                                  <button type="button" id="deposit__btn" class="btn btn-primary">Deposit</button>
+                            </div>
+                            <div id="deposit__account__information" class="account__information"><span>New Balance:</span></div>
+                            <div class="salaryButton">
+                                <button id="salary__btn" type="button" class="btn btn-danger">Get Monthly Salary</button>
+                                <div id="salaryTimer" class="salary__timer"></div>
+                              </div>
+                        </div>
+                        <div class="withdraw">
+                            <div class="withdraw__process">
+                                <div class="form-group">
+                                    <label for="withdrawAmount">Amount</label>
+                                    <input type="number" class="form-control" value="0" min="0" max="999999" id="withdrawAmount" placeholder= 0 dir="rtl" required>
+                                </div>
+                                  <button id="wthd__button" type="button" class="btn btn-primary">Withdraw</button>
+                            </div>
+                            <div id="wthd__main__account__information" class="account__information"><span>New Balance:</span></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                    <!-- --------------- Exchange---------------- -->
+
+                <div id="exc" class="processes">
+                    <div class="account">
+                        <label for="exc__first__account__picker">Please Pick The Account</label>
+                        <select id="exc__first__account__picker" class="form-control" name="exc__first__account__picker">
+                            <option value="tlAccount">TL &nbsp; Account</option>
+                            <option value="usdAccount">USD &nbsp; Account</option>
+                            <option value="eurAccount">EUR &nbsp; Account</option>
+                        </select>
+                        <div id="exc__first__account__information" class="account__information">12345<span>&nbsp;&nbsp;</span><span>TL</span></div>
+                    </div>
+                    <div class="account">
+                        <label for="exc__second__account__picker">Please Pick The Account</label>
+                        <select id="exc__second__account__picker" class="form-control" name="exc__second__account__picker">
+                            <option value="tlAccount">TL &nbsp; Account</option>
+                            <option value="usdAccount">USD &nbsp; Account</option>
+                            <option value="eurAccount">EUR &nbsp; Account</option>
+                        </select>
+                        <div id="exc__second__account__information" class="account__information">12345<span>&nbsp;&nbsp;</span><span>TL</span></div>
+                    </div>
+                    <div class="exchange__information">
+                        <div class="exc__amount__wrapper">
+                            <div class="exc__amount">
+                                <div class="first__amount__wrapper">
+                                    <div class="form-group">
+                                        <label for="exc__amount__input"><span id="first__currency__span">Amount To Convert</span></label>
+                                        <input type="number" class="form-control" value="0" min="0" max="999999" id="exc__amount__input" placeholder= 0 dir="rtl" required>
+                                      </div>
+                                </div>
+                                <div class="second__amount__wrapper">
+                                    <div id="second__currency__span" class="account__information">Converted Amount</div>
+                                </div>
+                            </div>
+                            <button id="convert__button" type="button" class="btn btn-primary">Convert</button>
+                        </div>
+                        <div class="exc__account__information d-flex justify-content-around  ">
+                            <div class="first__account__new__balance d-flex flex-column justify-content-center align-items-center ">
+                                <span id="exc__information__first" >TL</span>
+                                <span>New Balance:</span>
+                                <div id="first__account__information" class="account__information">Pick Account</div>
+                            </div>
+                            <div class="second__account__new__balance d-flex flex-column justify-content-center align-items-center">
+                                <span id="exc__information__second">USD</span>
+                                <span>New Balance:</span>
+                                <div id="second__account__information" class="account__information">Pick Account</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mvm" class="processes">
+                    <!--  --------------- Movements--------------- -->
+                    <div class="movements__main__wrapper">
+                        <div class="movement__header"><span>Type</span><span>Date</span><span>Amount</span></div>
+                        <div id="movements__wrapper" class="movements__wrapper">
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="helperSection">
+                        <div class="sorting">
+                            <div class="typeSelect">
+                                <label for="display__picker">Display</label>
+                                <select class="form-control" name="display__picker" id="display__picker">
+                                    <option value="displayAll">All</option>
+                                    <option value="displayIncome">Income</option>
+                                    <option value="displayOutcome">Outcome</option>
+                                    <option value="displayExchange">Exchange</option>
+                                </select>
+                            </div>
+                            <div class="sortingSelect">
+                                <label for="sorting__selector">Sort by</label>
+                                <select class="form-control" name="sorting__selector" id="sorting__selector">
+                                    <option value="sortByDate">Date</option>
+                                    <option value="sortByAmount">Amount</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+                        <div class="exporter">
+                            <p>Export Movements as PDF</p>
+                            <button id="pdfExportBtn" class="btn btn-primary">Download</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                
+            </div>
+
+            
+        </div>
+
+        <!-- ---------------------Footer --------------------  -->
+        <div class="footer">
+            <footer class="footer-section">
+                <div class="container">
+                    <div class="footer-cta pt-5 pb-5">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="cta-text">
+                                        <h4>Find us</h4>
+                                        <span>Adana / TURKEY</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="fas fa-phone"></i>
+                                    <div class="cta-text">
+                                        <h4>Call us</h4>
+                                        <span>9876543210 0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-4 mb-30">
+                                <div class="single-cta">
+                                    <i class="far fa-envelope-open"></i>
+                                    <div class="cta-text">
+                                        <h4>Mail us</h4>
+                                        <span>mail@info.com</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 mb-50">
+                                <div class="footer-widget">
+                                    <div class="footer-logo">
+                                        <a href="index.html"><img src="./public/broke-logo.png" class="img-fluid" alt="logo"></a>
+                                    </div>
+                                    <div class="footer-text">
+                                        <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                        elit,Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                    <div class="footer-social-icon">
+                                        <span>Follow us</span>
+                                        <a href="#"><i class="fab fa-facebook-f facebook-bg mb-2"></i></a>
+                                        <a href="#"><i class="fab fa-twitter twitter-bg mb-2"></i></a>
+                                        <a href="#"><i class="fab fa-google-plus-g google-bg mb-2"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3>Useful Links</h3>
+                                    </div>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Our Services</a></li>
+                                        <li><a href="#">Latest News</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                                <div class="footer-widget">
+                                    <div class="footer-widget-heading">
+                                        <h3>Contact</h3>
+                                    </div>
+                                    <div class="footer-text mb-25">
+                                        <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                    </div>
+                                    <div class="subscribe-form">
+                                        <form action="#">
+                                            <input type="text" placeholder="Email Address">
+                                            <button><i><i class="fa-solid fa-envelope-circle-check"></i></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                                <div class="copyright-text">
+                                    <p>Copyright &copy; 2018, All Right Reserved</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Terms</a></li>
+                                        <li><a href="#">Privacy</a></li>
+                                        <li><a href="#">Policy</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./helpers/html2pdf.js"></script>
+    <script src="./helpers/LocalStorage.js"></script>
+    <script src="./helpers/Movements.js"></script>
+    <script src="./helpers/Operations.js"></script>
+    <script src="./helpers/UI.js"></script>
+    <script src="./helpers/Currency.js"></script>
+    <script src="./helpers/Customer.js"></script>
+    <script src="./helpers/Notifications.js"></script>
+    <script src="./helpers/Validations.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
