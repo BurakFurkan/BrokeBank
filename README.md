@@ -3,7 +3,7 @@ Vanilla Javascript- Single Page App Desing- Boostrap -Form Validations -
 Font Awesome- Jquery - Swiper - Bootstrap - Charts
 
 USAGE <br/>
-Just double click on indeex.html <p>&#128512;</p>
+Just double click on index.html <span>&#128512;</span>
 
 Fetaures:
 
