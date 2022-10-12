@@ -2,6 +2,9 @@
 Vanilla Javascript- Single Page App Desing- Boostrap -Form Validations - 
 Font Awesome- Jquery - Swiper - Bootstrap - Charts
 
+USAGE <br/>
+Just double click on indeex.html <p>&#128512;</p>
+
 Fetaures:
 
 Name should be alphanumeric characters <br/>
