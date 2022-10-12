@@ -4,11 +4,11 @@ Font Awesome- Jquery - Swiper - Bootstrap - Charts
 
 Fetaures:
 
-Name should be alphanumeric characters
-Password should contain at least 7 character
-Form validations active
-You can get your monthly salary once in a month
-You can export your movements as PDF 
+Name should be alphanumeric characters <br/>
+Password should contain at least 7 character <br/>
+Form validations active <br/>
+You can get your monthly salary once in a month <br/>
+You can export your movements as PDF  <br/>
 
 
 
